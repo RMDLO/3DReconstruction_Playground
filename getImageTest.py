@@ -1,6 +1,7 @@
 import pyrealsense2 as rs
 import numpy as np
 import cv2
+import time
 
 pipeline = rs.pipeline()
 config = rs.config()
@@ -56,10 +57,14 @@ try:
             print("Escape hit, closing the app")
             break
         elif k%256 == 32:
-            img_name = "opencv_frame_{}.png".format(img_counter)
-            cv2.imwrite(img_name, color_image)
-            print("screenshot taken")
-            img_counter += 1
+            frameNum = 10
+            interval = 2
+            for i in range(frameNum):
+                img_name = "opencv_frame_{}.png".format(img_counter)
+                cv2.imwrite(img_name, color_image)
+                print("screenshot taken")
+                img_counter += 1
+                time.sleep(interval)
 
 finally:
 
