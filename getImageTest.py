@@ -59,12 +59,9 @@ try:
         elif k%256 == 32:
             frameNum = 10
             interval = 2
-            for i in range(frameNum):
-                img_name = "opencv_frame_{}.png".format(img_counter)
-                cv2.imwrite(img_name, color_image)
-                print("screenshot taken")
-                img_counter += 1
-                time.sleep(interval)
+            img_name = "/home/fsamhouri/Documents/Project/Images/Cam1/opencv_frame_{}.png".format(img_counter)
+            cv2.imwrite(img_name, color_image)
+            img_counter += 1
 
 finally:
 
