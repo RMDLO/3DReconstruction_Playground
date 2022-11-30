@@ -17,7 +17,9 @@ $ cd 3DReconstruction_Playground && pip install -r requirements.txt
 #### Run Instructions
 
 
-
+<p align="center">
+  <img src="images/adafruit.png" width="500" title="hover text">
+</p>
 
 #### Acknowledgements
 
