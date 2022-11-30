@@ -3,7 +3,7 @@ The goal of this application is to test the use of 3D Reconstruction on Robotic 
 
 #### Installation Instructions
 
-First install ![OpenSfM dependenciese and build the library](https://opensfm.org/docs/building.html).
+First install ![OpenSfM dependencies and build the library](https://opensfm.org/docs/building.html).
 
 Next, perform the below comands in a bash terminal. 
 
