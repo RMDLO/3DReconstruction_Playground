@@ -26,7 +26,7 @@ $ cd 3DReconstruction_Playground && pip install -r requirements.txt
   <img src="images/scale.png" width="500" title="hover text">
 </p>
 
-Below is the pointcloud generated from 3D Reconstruction Playground. This pointcloud was generated using ![26 images](https://github.com/RMDLO/3DReconstructionPlayground/images/adafruit)
+Below is the pointcloud generated from 3D Reconstruction Playground. This pointcloud was generated using ![26 images](https://github.com/RMDLO/3DReconstruction_Playground/tree/master/images/adafruit)
 
 <p align="center">
   <img src="images/adafruit.png" width="500" title="hover text">
