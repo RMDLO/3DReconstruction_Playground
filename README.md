@@ -1,6 +1,23 @@
 #### Abstract
 The goal of this application is to test the use of 3D Reconstruction on Robotic Perception to manipulate deformable objects. 
 
+#### Installation Instructions
+
+First install ![OpenSfM dependenciese and build the library](https://opensfm.org/docs/building.html).
+
+Next, perform the below comands in a bash terminal. 
+
+```bash
+# Clone the RMDLO 3D Reconstruction Playground
+$ git clone git@github.com:RMDLO/3DReconstruction_Playground.git --recurse-submodules
+# Install 3D Reconstruction Playground requirements
+$ cd 3DReconstruction_Playground && pip install -r requirements.txt
+```
+
+#### Run Instructions
+
+
+
 
 #### Acknowledgements
 
