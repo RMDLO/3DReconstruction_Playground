@@ -17,6 +17,17 @@ $ cd 3DReconstruction_Playground && pip install -r requirements.txt
 #### Run Instructions
 
 
+
+#### Example Output
+
+3D Reconstruction Playground allows users to reconstruct scenes with small objects where depth imagery may not have fine enough resolution or may be impossible to collect. Below is an example image of a small component we used 3D Reconstruction Playground to image.
+
+<p align="center">
+  <img src="images/scale.png" width="500" title="hover text">
+</p>
+
+Below is the pointcloud generated from 3D Reconstruction Playground. This pointcloud was generated using ![26 images](https://github.com/RMDLO/3DReconstructionPlayground/images/adafruit)
+
 <p align="center">
   <img src="images/adafruit.png" width="500" title="hover text">
 </p>
