@@ -2,6 +2,32 @@ import pyrealsense2 as rs
 import numpy as np
 import cv2
 import time
+import os
+
+yourPath = "/home/fsamhouri/Documents/" #change this path to the directory your 3Drp file is in
+sfmPath = "3DReconstruction_Playground/OpenSfM/data/"
+imagePath = "images/"
+
+
+while True:
+    print("Please type in the name of your image folder")
+    folderName = input()
+
+    newPath = yourPath + sfmPath + folderName + "/" + imagePath 
+    checkPath = yourPath + sfmPath + folderName
+    if os.path.exists(checkPath):
+        print("This folder already exists. Do you wish use it? [Y/N]")
+        ans = input()
+        if ans == "Y":
+            break
+        elif ans == "N":
+            continue
+        else:
+            print("Invalid Response")
+            continue
+    else:
+        os.makedirs(newPath)
+        break
 
 pipeline = rs.pipeline()
 config = rs.config()
@@ -59,7 +85,7 @@ try:
         elif k%256 == 32:
             frameNum = 10
             interval = 2
-            img_name = "/home/fsamhouri/Documents/Project/Images/Cam1/opencv_frame_{}.png".format(img_counter)
+            img_name = newPath + "pic{}.png".format(img_counter)
             cv2.imwrite(img_name, color_image)
             img_counter += 1
 
