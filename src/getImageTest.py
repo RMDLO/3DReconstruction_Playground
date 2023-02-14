@@ -5,7 +5,7 @@ import time
 import os
 
 yourPath = "/home/fsamhouri/Documents/" #change this path to the directory your 3Drp file is in
-sfmPath = "3DReconstruction_Playground/OpenSfM/data/"
+sfmPath = "3DReconstruction_Playground/src/OpenSfM/data/"
 imagePath = "images/"
 
 

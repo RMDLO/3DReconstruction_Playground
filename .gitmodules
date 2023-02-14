@@ -1,3 +1,3 @@
-[submodule "OpenSfM"]
-	path = OpenSfM
+[submodule "src/OpenSfM"]
+	path = src/OpenSfM
 	url = git@github.com:RMDLO/OpenSfM.git
